@@ -1,0 +1,749 @@
+﻿html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay img{border:none!important}#swipebox-overlay{width:100%;height:100%;position:fixed;top:0;left:0;z-index:99999!important;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}#swipebox-container{position:relative;width:100%;height:100%}#swipebox-slider{-webkit-transition:-webkit-transform .4s ease;transition:transform .4s ease;height:100%;left:0;top:0;width:100%;white-space:nowrap;position:absolute;display:none;cursor:pointer}#swipebox-slider .slide{height:100%;width:100%;line-height:1px;text-align:center;display:inline-block}#swipebox-slider .slide:before{content:"";display:inline-block;height:50%;width:1px;margin-right:-1px}#swipebox-slider .slide .swipebox-inline-container,#swipebox-slider .slide .swipebox-video-container,#swipebox-slider .slide img{display:inline-block;max-height:100%;max-width:100%;margin:0;padding:0;width:auto;height:auto;vertical-align:middle}#swipebox-slider .slide .swipebox-video-container{background:0 0;max-width:1140px;max-height:100%;width:100%;padding:5%;-webkit-box-sizing:border-box;box-sizing:border-box}#swipebox-slider .slide .swipebox-video-container .swipebox-video{width:100%;height:0;padding-bottom:56.25%;overflow:hidden;position:relative}#swipebox-slider .slide .swipebox-video-container .swipebox-video iframe{width:100%!important;height:100%!important;position:absolute;top:0;left:0}#swipebox-slider .slide-loading{background:url(img/loader.gif) center center no-repeat}#swipebox-bottom-bar,#swipebox-top-bar{-webkit-transition:.5s;transition:.5s;position:absolute;left:0;z-index:999;height:50px;width:100%}#swipebox-bottom-bar{bottom:-50px}#swipebox-bottom-bar.visible-bars{-webkit-transform:translate3d(0,-50px,0);transform:translate3d(0,-50px,0)}#swipebox-top-bar{top:-50px}#swipebox-top-bar.visible-bars{-webkit-transform:translate3d(0,50px,0);transform:translate3d(0,50px,0)}#swipebox-title{display:block;width:100%;text-align:center}#swipebox-close,#swipebox-next,#swipebox-prev{background-image:url(img/icons.png);background-repeat:no-repeat;border:none!important;text-decoration:none!important;cursor:pointer;width:50px;height:50px;top:0}#swipebox-arrows{display:block;margin:0 auto;width:100%;height:50px}#swipebox-prev{background-position:-32px 13px;float:left}#swipebox-next{background-position:-78px 13px;float:right}#swipebox-close{top:0;right:0;position:absolute;z-index:9999;background-position:15px 12px}.swipebox-no-close-button #swipebox-close{display:none}#swipebox-next.disabled,#swipebox-prev.disabled{opacity:.3}.swipebox-no-touch #swipebox-overlay.rightSpring #swipebox-slider{-webkit-animation:rightSpring .3s;animation:rightSpring .3s}.swipebox-no-touch #swipebox-overlay.leftSpring #swipebox-slider{-webkit-animation:leftSpring .3s;animation:leftSpring .3s}.swipebox-touch #swipebox-container:after,.swipebox-touch #swipebox-container:before{-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transition:all .3s ease;transition:all .3s ease;content:' ';position:absolute;z-index:999;top:0;height:100%;width:20px;opacity:0}.swipebox-touch #swipebox-container:before{left:0;-webkit-box-shadow:inset 10px 0 10px -8px #656565;box-shadow:inset 10px 0 10px -8px #656565}.swipebox-touch #swipebox-container:after{right:0;-webkit-box-shadow:inset -10px 0 10px -8px #656565;box-shadow:inset -10px 0 10px -8px #656565}.swipebox-touch #swipebox-overlay.leftSpringTouch #swipebox-container:before,.swipebox-touch #swipebox-overlay.rightSpringTouch #swipebox-container:after{opacity:1}@-webkit-keyframes rightSpring{0%{left:0}50%{left:-30px}100%{left:0}}@keyframes rightSpring{0%{left:0}50%{left:-30px}100%{left:0}}@-webkit-keyframes leftSpring{0%{left:0}50%{left:30px}100%{left:0}}@keyframes leftSpring{0%{left:0}50%{left:30px}100%{left:0}}@media screen and (min-width:800px){#swipebox-close{right:10px}#swipebox-arrows{width:92%;max-width:800px}}#swipebox-overlay{background:#0d0d0d}#swipebox-bottom-bar,#swipebox-top-bar{text-shadow:1px 1px 1px #000;background:#000;opacity:.95}#swipebox-top-bar{color:#fff!important;font-size:15px;line-height:43px;font-family:Helvetica,Arial,sans-serif}
+/* Auto */
+.frb-widget-heading .frb-heading-title {
+    color: #f7b035;
+    font-family: "dana", "Rubik", Sans-serif;
+    font-weight: 700;
+}
+
+.frb-widget-image .widget-image-caption {
+    color: #616161;
+    font-family: "dana", "Open Sans", Sans-serif;
+    font-weight: 400;
+}
+.frb-widget-text-editor {
+    color: #616161;
+    font-family: "dana", "Open Sans", Sans-serif;
+    font-weight: 400;
+}
+
+    .frb-widget-text-editor.frb-drop-cap-view-stacked .frb-drop-cap {
+        background-color: #f7b035;
+    }
+
+    .frb-widget-text-editor.frb-drop-cap-view-framed .frb-drop-cap, .frb-widget-text-editor.frb-drop-cap-view-default .frb-drop-cap {
+        color: #f7b035;
+        border-color: #f7b035;
+    }
+
+.frb-widget-button .frb-button {
+    font-family: "Open Sans", Sans-serif;
+    font-weight: 400;
+    background-color: #f7b035;
+}
+
+.frb-widget-divider {
+    --divider-border-color: #232323;
+}
+
+    .frb-widget-divider .frb-divider__text {
+        color: #232323;
+        font-family: "Rubik", Sans-serif;
+        font-weight: 700;
+    }
+
+    .frb-widget-divider.frb-view-stacked .frb-icon {
+        background-color: #232323;
+    }
+
+    .frb-widget-divider.frb-view-framed .frb-icon, .frb-widget-divider.frb-view-default .frb-icon {
+        color: #232323;
+        border-color: #232323;
+    }
+
+        .frb-widget-divider.frb-view-framed .frb-icon, .frb-widget-divider.frb-view-default .frb-icon svg {
+            fill: #232323;
+        }
+
+.frb-widget-image-box .frb-image-box-content .frb-image-box-title {
+    color: #f7b035;
+    font-family: "Rubik", Sans-serif;
+    font-weight: 700;
+}
+
+.frb-widget-image-box .frb-image-box-content .frb-image-box-description {
+    color: #616161;
+    font-family: "Open Sans", Sans-serif;
+    font-weight: 400;
+}
+
+.frb-widget-icon.frb-view-stacked .frb-icon {
+    background-color: #f7b035;
+}
+
+.frb-widget-icon.frb-view-framed .frb-icon, .frb-widget-icon.frb-view-default .frb-icon {
+    color: #f7b035;
+    border-color: #f7b035;
+}
+
+    .frb-widget-icon.frb-view-framed .frb-icon, .frb-widget-icon.frb-view-default .frb-icon svg {
+        fill: #f7b035;
+    }
+
+.frb-widget-icon-box.frb-view-stacked .frb-icon {
+    background-color: #f7b035;
+}
+
+.frb-widget-icon-box.frb-view-framed .frb-icon, .frb-widget-icon-box.frb-view-default .frb-icon {
+    fill: #f7b035;
+    color: #f7b035;
+    border-color: #f7b035;
+}
+
+.frb-widget-icon-box .frb-icon-box-content .frb-icon-box-title {
+    color: #f7b035;
+    font-family: "Rubik", Sans-serif;
+    font-weight: 700;
+}
+
+.frb-widget-icon-box .frb-icon-box-content .frb-icon-box-description {
+    color: #616161;
+    font-family: "Open Sans", Sans-serif;
+    font-weight: 400;
+}
+
+.frb-widget-wgl-button a.frb-button, .frb-widget-wgl-button .frb-button {
+    background-color: #f7b035;
+}
+
+.frb-widget-wgl-combo-menu .menu-item_title {
+    font-family: "Rubik", Sans-serif;
+    font-weight: 700;
+}
+
+.frb-widget-wgl-combo-menu .menu-item_desc {
+    font-family: "Rubik", Sans-serif;
+    font-weight: 700;
+}
+
+.frb-widget-wgl-combo-menu .menu-item_price {
+    font-family: "Rubik", Sans-serif;
+    font-weight: 700;
+}
+
+.frb-widget-wgl-info-box .wgl-infobox_content {
+    font-family: "Open Sans", Sans-serif;
+    font-weight: 400;
+}
+
+.frb-widget-wgl-info-box .wgl-infobox_button {
+    font-family: "Rubik", Sans-serif;
+    font-weight: 700;
+}
+
+.frb-widget-wgl-working-hours .working-item_day {
+    font-family: "Rubik", Sans-serif;
+    font-weight: 700;
+}
+
+.frb-widget-wgl-working-hours .working-item_hours {
+    font-family: "Rubik", Sans-serif;
+    font-weight: 700;
+}
+
+.frb-section.frb-section-boxed > .frb-container {
+    max-width: 1170px;
+}
+
+
+img.wp-smiley,
+img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+.farsica form .form-row .required {
+    visibility: visible;
+}
+
+body {
+    font-family: Open Sans;
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 400;
+    color: #616161;
+}
+
+    body input:not([type='checkbox']):not([type='submit']), select, textarea, #comments .commentlist .comment_info .meta-wrapper *, .author-info_name, .foodmood_module_time_line_vertical .time_line-title, .isotope-filter a .number_filter, .author-widget_text, .wgl-portfolio-item-info_desc span, .blog-post.format-quote .blog-post_quote-author, .wgl_module_team .team-department, body .comment-form-cookies-consent > label, .wgl-accordion .wgl-accordion_panel .wgl-accordion_content, .single_team_page .team-info_wrapper .team-info_item, .frb-widget-wgl-pricing-table .pricing_header .pricing_desc, .frb-widget-wgl-time-line-vertical .time_line-content .time_line-text, .wgl-portfolio-single_wrapper .wgl-portfolio-item_cats, .wgl-combo-menu .menu-item .menu-item_desc, .wgl-working-hours .working-item .working-item_day {
+        font-family: Open Sans;
+    }
+
+.frb-widget-wgl-time-line-vertical .time_line-content .time_line-text {
+    font-weight: 400;
+}
+
+.wgl-tabs .wgl-tabs_content-wrap .wgl-tabs_content {
+    font-family: Open Sans;
+    font-weight: 400;
+}
+
+select, body .footer .select__field:before, body input:not([type='checkbox']):not([type='submit'])::placeholder, select::placeholder, textarea::placeholder, body .widget_rss ul li .rssSummary, .search-no-results .page_404_wrapper .search-form .search-field::placeholder, .search-no-results .page_404_wrapper .search-form .search-field, .blog-post_meta-categories span, .blog-post_meta-categories span:after, .foodmood_module_message_box .message_content .message_text, .vc_wp_custommenu .menu .menu-item.current-menu-item > a, .blog-post.format-quote .blog-post_quote-author-pos, .foodmood_module_testimonials .testimonials_quote, .recent-posts-widget .meta-wrapper a:hover, .vc_row .vc_toggle .vc_toggle_icon, .isotope-filter a, .wgl_module_team .team-department, .blog-style-hero .blog-post.format-standard .meta-wrapper, .blog-style-hero .blog-post.format-link .meta-wrapper, .blog-style-hero .blog-post.format-audio .meta-wrapper, .blog-style-hero .blog-post.format-quote .meta-wrapper, .blog-style-hero .blog-post.format-standard .meta-wrapper a, .blog-style-hero .blog-post.format-link .meta-wrapper a, .blog-style-hero .blog-post.format-audio .meta-wrapper a, .blog-style-hero .blog-post.format-quote .meta-wrapper a, .blog-style-hero .blog-post.format-standard .blog-post_text, .blog-style-hero .blog-post.format-link .blog-post_text, .blog-style-hero .blog-post.format-audio .blog-post_text, .blog-style-hero .blog-post.format-quote .blog-post_text, .wgl-pricing_plan .pricing_price_wrap .pricing_desc {
+    color: #616161;
+}
+
+.foodmood_module_title .external_link .button-read-more {
+    line-height: 1.875;
+}
+
+h1, h2, h3, h4, h5, h6, h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .dropcap, .frb-drop-cap, .blog-post_cats, .blog-posts .blog-post_title, .column1 .item_title a, .foodmood_twitter .twitt_title, .tagcloud-wrapper .title_tags, .strip_template .strip-item a span, .single_team_page .team-single_speaches-info .speech-info_desc span, .shortcode_tab_item_title, .index_number, .primary-nav.footer-menu .menu-item a {
+    font-family: "dana", Rubik;
+    font-weight: 700;
+}
+
+.banner_404, input[type="submit"], button, body .widget, body .widget .widget-title, body .widget_rss ul li .rss-date, body .widget_categories a, body .widget_product_categories a, body .widget_meta a, body .widget_archive a, label, legend, .page_404_wrapper .foodmood_404_button.wgl_button .wgl_button_link, .wgl-social-share_pages.hovered_style .share_social-title, .blog-post_text-bg, .author-info_content .author-info_name, .button-read-more, .blog-post_meta-date .date_post span, .blog-post_meta-date .date_post, .theme-header-font, .countdown-section .countdown-amount, .comments-title .number-comments, .foodmood_module_progress_bar .progress_label, .foodmood_module_double_headings, .foodmood_module_infobox .infobox_icon_container .infobox_icon_number, .wgl-button, .frb-button, .wgl-pricing_plan .pricing_cur, .wgl-pricing_plan .pricing_price .price_decimal, .foodmood_module_testimonials .testimonials_item:before, .foodmood_module_testimonials .testimonials_status, .foodmood_module_counter .counter_title, .foodmood_module_videobox .title, .foodmood_module_progress_bar .progress_value, .foodmood_module_progress_bar .progress_units, .foodmood_module_counter .counter_value_wrapper, .foodmood_module_counter .counter_value_placeholder, .wgl-pricing_plan .pricing_plan_wrap .pricing_price_wrap, .foodmood_module_ico_progress .progress_value_completed, .foodmood_module_ico_progress .progress_value_min, .foodmood_module_ico_progress .progress_value_max, .foodmood_module_ico_progress .progress_point, .mashsb-count .counts, .mashsb-box .mashsb-buttons a .text, .prev-link, .next-link, .vc_row .vc_tta.vc_general.vc_tta-style-accordion_bordered .vc_tta-panel-title > a span, .widget.widget_wgl_posts .recent-posts-widget li > .recent-posts-content .post_title, .heading_subtitle, .info_prev-link_wrapper a, .info_next-link_wrapper a, .single_team_page .team-single_speaches-info .speech-info_day, .single_team_page .team-info_wrapper .team-info_item h5, .wgl-portfolio-item-info_desc h5, .wgl-portfolio-item_meta .post_cats, .wgl-portfolio-item_meta .post_cats, .wgl-portfolio-item_cats, .wpb-js-composer .wgl-container .vc_row .vc_general.vc_tta.vc_tta-tabs .vc_tta-tabs-container .vc_tta-tabs-list .vc_tta-tab > a, .wpb-js-composer .wgl-container .vc_chart.vc_round-chart[data-vc-legend="1"] .vc_chart-legend li, .isotope-filter a, body .comment-respond .comment-reply-title, .page-header_title, .foodmood_module_services_2 .services_link, .foodmood_module_testimonials.type_inline_top .testimonials_meta_wrap:after, .foodmood_module_testimonials .testimonials_position, .foodmood_module_services_4 .services_subtitle, .dropcap, .dropcap-bg, .wgl-countdown .countdown-section .countdown-period, .wgl-pagination .page, .page-link, ul.wp-block-archives.wp-block-archives-list li a, ul.wp-block-categories.wp-block-categories-list li a, ul.wp-block-categories.wp-block-categories-list li .post_count, ul.wp-block-latest-posts li a, .frb-counter, .load_more_item, .load_more_wrapper .load_more_item, .wgl-portfolio-single_item .wgl-portfolio-item_annotation .single_info-share_social-wpapper .share_title, .page-header_breadcrumbs .breadcrumbs {
+    font-family: "dana", Rubik;
+}
+
+.wgl-infobox_bg_title, .wgl-background-text, .frb-section.wgl-add-background-text:before {
+    font-family: "dana", Rubik;
+    font-weight: 700;
+}
+
+#comments .commentlist .comment_author_says {
+    font-family: "dana", Rubik;
+}
+
+.banner_404, input[type="submit"], .author-info_public, .wgl-portfolio-item_annotation_social .single_info-share_social-wpapper > span, .foodmood_module_time_line_horizontal .tlh_date, .tagcloud a, .wgl-portfolio-single_item .tagcloud .tagcloud_desc, .wgl_timetabs .timetabs_data .timetabs_item .item_time, .wgl_timetabs .timetabs_data .timetabs_item .content-wrapper .item_title, .wpb-js-composer .wgl-container .vc_row .vc_pie_chart .vc_pie_chart_value, .wgl_timetabs .timetabs_headings .wgl_tab, .wgl-pricing_plan .pricing_content, blockquote {
+    font-family: "dana", Rubik;
+    color: #232323;
+}
+
+body .footer select option, body .widget_wgl_posts .recent-posts-widget .post_title a, button, h1, h2, h3, h4, h5, h6, h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h3#reply-title a, .slick-dots li button, .calendar_wrap tbody, .comment_author_says, .comment_author_says a, .share_post-container .share_post, .tagcloud-wrapper .title_tags, .theme-header-color, .foodmood_module_double_headings .heading_title, .foodmood_module_testimonials .testimonials_item .testimonials_content_wrap .testimonials_name, .wgl-pricing_plan .pricing_plan_wrap .pricing_content > ul > li > b, .foodmood_module_social .soc_icon, .foodmood_module_counter .counter_value_wrapper, .foodmood_module_message_box .message_close_button:hover, .prev-link-info_wrapper, .next-link-info_wrapper, .item_title a, .foodmood_module_counter .counter_value_wrapper, .wgl_module_title.item_title .carousel_arrows a span:after, .wgl_module_team.info_under_image .team-department, .wgl-portfolio-item_wrapper .portfolio_link, .widget_product_search .farsica-product-search:after, .wpb-js-composer .wgl-container .vc_row .vc_general.vc_tta.vc_tta-tabs .vc_tta-panels-container .vc_tta-panels .vc_tta-panel:not(.vc_active) .vc_tta-panel-heading .vc_tta-panel-title, .wpb-js-composer .wgl-container .vc_row .vc_general.vc_tta.vc_tta-tabs .vc_tta-tabs-container .vc_tta-tabs-list .vc_tta-tab:not(.vc_active) > a, .wpb-js-composer .wgl-container .vc_row .vc_toggle.vc_toggle_color_check.vc_toggle_active .vc_toggle_title .vc_toggle_icon, .under_image .wgl-portfolio-item_title .title a, .wpb-js-composer .wgl-container .vc_row .vc_toggle .vc_toggle_title, .button-read-more:hover, .blog-post_views-wrap .wgl-views:before, .wgl-container ul.wp-block-latest-posts li:before, body .widget_categories ul li a, body .widget_product_categories ul li a, body .widget_meta ul li a, body .widget_archive ul li a, body .widget_comments > ul > li:before, body .widget_meta > ul > li:before, body .widget_archive > ul > li:before, body .widget_recent_comments > ul > li:before, body .widget_recent_entries > ul > li:before, body .widget .widget-title .widget-title_wrapper, body .widget ul li, body .widget_product_categories ul li a:hover + .post_count, body .widget_archive ul li a:hover + .post_count, .widget.widget_recent_comments ul li a, .foodmood_module_services_2 .services_link, ul.wp-block-archives.wp-block-archives-list li a, ul.wp-block-archives.wp-block-archives-list li:before, ul.wp-block-categories.wp-block-categories-list li a, ul.wp-block-latest-posts li a, .wgl-pricing_plan .pricing_plan_wrap .pricing_price_wrap, .blog-style-hero .blog-post.format-standard .blog-post_title a, .blog-style-hero .blog-post.format-link .blog-post_title a, .blog-style-hero .blog-post.format-audio .blog-post_title a, .blog-style-hero .blog-post.format-quote .blog-post_title a, .wgl-pagination .page .current, .wgl-pagination .page-numbers:hover, .page-link .post-page-numbers:hover, .page-link .post-page-numbers.current, .tagcloud a, #comments .comment-reply-link:hover, #comments .comment-reply-link:focus, #comments .comment-reply-link:active, .blog_carousel .wgl-carousel .slick-arrow:hover, .products_carousel .wgl-carousel .slick-arrow:hover, .load_more_item, .load_more_wrapper .load_more_item, .slick-dots li button, .wgl-portfolio-item_meta .post_cats a:hover {
+    color: #232323;
+}
+
+    input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus, button:hover, .post_featured_bg, .foodmood_module_title .carousel_arrows a span {
+        background: #232323;
+    }
+
+    .blog-style-hero .blog-post_bg_media:after, .slick-dots li button, .wgl-carousel.pagination_line .slick-dots li button:before, .wgl-carousel.pagination_square .slick-dots li, .wgl-carousel.pagination_circle_border .slick-dots li button:before, .foodmood_module_infobox.infobox_alignment_left.title_divider .infobox_title:before, .foodmood_module_infobox.infobox_alignment_right.title_divider .infobox_title:before, .page_404_wrapper .foodmood_404_button.wgl_button .wgl_button_link:hover, .load_more_item:hover, .load_more_wrapper .load_more_item:hover {
+        background-color: #232323;
+    }
+
+    .foodmood_module_title .carousel_arrows a span:before, .wgl-pricing_plan .pricing_highlighter, .wgl-carousel.pagination_circle_border .slick-dots li.slick-active button, .load_more_item, .load_more_wrapper .load_more_item:hover, .page_404_wrapper .foodmood_404_button.wgl_button .wgl_button_link:hover {
+        border-color: #232323;
+    }
+
+.blog-post_wrapper .blog-post_media .wgl-video_popup .videobox_link .videobox_icon, .blog-post-hero_wrapper .wgl-video_popup .videobox_link .videobox_icon, .wgl_module_team .team-item_wrap:hover .team-info_icons-flag svg, .single-team .single_team_page .team-image:hover .team-info_icons-flag svg {
+    fill: #232323;
+}
+
+.wgl-theme-header .wgl-sticky-header .header_search {
+    height: 100px !important;
+}
+
+#scroll_up {
+    background-color: #f7b035;
+    color: #ffffff;
+}
+
+.primary-nav > div > ul, .primary-nav > ul, .sitepress_container > .wpml-ls li, .primary-nav ul li.mega-menu-links > ul > li {
+    font-family: "dana", Rubik;
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 17px;
+}
+
+.primary-nav ul li ul, .wpml-ls, .sitepress_container > .wpml-ls ul ul li, .primary-nav ul li div.mega-menu-container {
+    font-family: "dana", Rubik;
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.wgl-theme-header .header_search-field, .primary-nav ul li ul, .primary-nav ul li div.mega-menu-container, .wgl-theme-header .woo_mini_cart, .wpml-ls-legacy-dropdown .wpml-ls-current-language .wpml-ls-sub-menu {
+    background-color: rgba(255,255,255,1);
+    color: #232323;
+}
+
+    .primary-nav ul li ul:not(.mega-menu) li.menu-item-has-children > a > span > .menu-item_plus:before {
+        color: #232323;
+    }
+
+.mobile_nav_wrapper, .wgl-menu_outer, .wgl-menu_outer .mobile-hamburger-close, .mobile_nav_wrapper .primary-nav ul li ul.sub-menu, .mobile_nav_wrapper .primary-nav ul li.mega-menu-links > ul.mega-menu > li > ul > li ul, .mobile_nav_wrapper .primary-nav ul li.mega-menu-links > ul.mega-menu > li > ul {
+    background-color: rgba(45,45,45,1);
+    color: #ffffff;
+}
+
+    .mobile_nav_wrapper .wgl-menu_overlay {
+        background-color: rgba(49,49,49,0.8);
+    }
+
+#side-panel .side-panel_sidebar .widget .widget-title .widget-title_wrapper {
+    color: rgba(255,255,255,1);
+}
+
+.additional_font, .wgl-progress_bar .progress_label_wrap .progress_label, .wgl-progress_bar .progress_label_wrap .progress_value_wrap, .wgl-pricing_plan .pricing_header .pricing_title, .wgl-pricing_plan .pricing_price, .wgl-pricing_plan .pricing_cur, .wgl-testimonials .wgl-testimonials_name, .wgl-double_heading .dbl-subtitle, .wgl-combo-menu .menu-item .menu-item_price, .wgl_module_team .team-department, .meta-wrapper, .blog-post_info-wrap > .meta-wrapper *, .single_info-share_social-wpapper .share_title, #comments .comment-reply-link, #comments .commentlist .comment_info .meta-wrapper .comment-edit-link span, #comments > h3 span, body .widget .widget-title .widget-title_wrapper, body .widget_categories .post_count, body .widget_product_categories .post_count, body .widget_meta .post_count, body .widget_archive .post_count, body .widget_wgl_posts .recent-posts-widget .meta-wrapper span, .widget.foodmood_widget.foodmood_banner-widget .banner-widget_text, .widget.foodmood_widget.foodmood_banner-widget .banner-widget_text_sub, .wgl-counter .wgl-counter_value-wrap, .wgl-working-hours .working-item .working-item_hours, blockquote cite, .wgl-timeline-vertical .time_line-item .time_line-date, .wgl-timeline-vertical .time_line-item .time_line-subtitle, .wgl-infobox_title {
+    font-family: Delius Unicase;
+}
+
+    a, a:hover .wgl-icon, a.wgl-icon:hover, body ol > li:before, button, button:focus, button:active, h3#reply-title a:hover, form.post-password-form input[type='submit']:hover, #comments .comment-reply-link, .mobile_nav_wrapper .primary-nav ul li ul .menu-item.current-menu-item > a, .mobile_nav_wrapper .primary-nav ul ul li.menu-item.current-menu-ancestor > a, .primary-nav ul li ul li.current-menu-ancestor.current-menu-parent > a, .primary-nav ul li ul li.current-menu-item > a, .primary-nav ul li ul li.current_page_item > a, .primary-nav ul li ul li:hover > a, .mobile_nav_wrapper .primary-nav > ul > li > a > span:after, .author-info_social-wrapper, .blog-post_link:before, .blog-post_title i, .blog-style-standard .blog-post:hover .blog-post_wrapper .blog-post_meta_info .meta-wrapper span, .blog-post_link > .link_post:hover, .blog-post.format-standard.link .blog-post_title:before, .blog-post_cats span, .blog-post_title a:hover, .calendar_wrap thead, .copyright a:hover, .comment_author_says a:hover, .foodmood_submit_wrapper:hover > i, .foodmood_custom_button i, .foodmood_custom_text a, .foodmood_module_button .wgl_button_link:hover, .foodmood_module_button.effect_3d .link_wrapper, .foodmood_module_counter .counter_icon, .foodmood_module_demo_item .di_button a:hover, .foodmood_module_demo_item .di_title_wrap a:hover .di_title, .foodmood_module_demo_item .di_title-wrap .di_subtitle, .foodmood_module_social .soc_icon:hover, .foodmood_twitter a, .foodmood_module_testimonials.type_author_top_inline .testimonials_meta_wrap:after, .foodmood_module_testimonials .testimonials_status, .foodmood_module_circuit_services .services_subtitle, .foodmood_module_circuit_services .services_item-icon, .foodmood_module_flipbox .flipbox_front .flipbox_front_content, .foodmood_module_services_3 .services_icon_wrapper, .foodmood_module_services_4 .services_icon, .foodmood_module_services_4:hover .services_number, .load_more_works:hover, .header_search .header_search-button > i:hover, .header_search-field .search-form:after, .mc_form_inside #mc_signup_submit:hover, .share_post-container .share_social-wpapper ul li .share_post span.fa:hover, .share_link span.fa:hover, .share_post span.fa:hover, .share_post-container, .single_team_page .team-single_speaches-info .speech-info_desc span, .single_team_page .team-info_wrapper .team-info_item a:hover, .single-member-page .member-icon:hover, .single-member-page .team-link:hover, .single_team_page .team-single_speaches-info .speech-info_day, .single_team_page .team-info_icons a:hover, .team-icons .member-icon:hover, .vc_wp_custommenu .menu .menu-item.current-menu-item > a, .vc_wp_custommenu .menu .menu-item.current-menu-ancestor > a, .wpml-ls a:hover, .wpml-ls-legacy-dropdown .wpml-ls-current-language:hover > a, .wpml-ls-legacy-dropdown .wpml-ls-current-language a:hover, .wgl-container ul li:before, .wgl_timetabs .timetabs_headings .wgl_tab.active .tab_subtitle, .wgl_timetabs .timetabs_headings .wgl_tab:hover .tab_subtitle, .wgl_portfolio_category-wrapper a:hover, .single.related_posts .meta-wrapper a, .single.related_posts .blog-post_title a:hover, .wgl_module_team .team-since, .wgl_module_team .team-item_info .team-item_titles .team-title a:hover, .wgl-icon:hover, .wgl-theme-color, .wgl-portfolio-item_wrapper .portfolio_link-icon:hover, .wgl-portfolio-item_corners, .wgl-portfolio-item_cats, .wpb-js-composer .vc_row .vc_tta.vc_general .vc_active .vc_tta-panel-title > a:before, .wgl-social-share_pages.hovered_style ul li a:hover, .foodmood_module_time_line_horizontal .tlh_check_wrap, .foodmood_module_testimonials .testimonials_item:before, .isotope-filter a:after, .wgl-container ul.foodmood_slash li:before, .single_type-1 .single_meta .author_post a:hover, .single_type-2 .single_meta .author_post a:hover, .info_prev-link_wrapper > a, .info_next-link_wrapper > a, #comments .commentlist .comment_info .meta-wrapper .comment-edit-link, .blog-style-standard .blog-post_meta-categories span + span:before, .blog-post_meta-categories span, .meta-wrapper a:hover, .single-team .single_team_page .team-info_icons .team-icon:hover, .foodmood_module_services_2 .services_link:hover, .foodmood_module_services_2 .services_wrapper i, .foodmood_module_double_headings .heading_subtitle, .foodmood_module_counter .counter_value_wrapper .counter_value_suffix, .foodmood_module_counter .counter_value_placeholder .counter_value_suffix, .wgl-portfolio_container .wgl-carousel.arrows_center_mode .slick-prev:hover:after, .wgl-portfolio_container .wgl-carousel.arrows_center_mode .slick-next:hover:after, .blog_carousel .wgl-carousel .slick-arrow, .products_carousel .wgl-carousel .slick-arrow, .wgl_timetabs .timetabs_headings .wgl_tab .services_icon, .widget.widget_archive ul li a:hover, .widget.widget_archive ul li a:hover + span + span, .widget.widget_categories ul li a:hover, .widget.widget_categories ul li a:hover + span + span, .widget.widget_product_categories ul li a:hover + span + span, .widget.widget_pages ul li a:hover, .widget.widget_meta ul li a:hover, .widget.foodmood_widget.foodmood_banner-widget .banner-widget_button, .widget.widget_wgl_posts .recent-posts-widget li > .recent-posts-content .post_title a:hover, .widget.widget_recent_comments ul li a:hover, .widget.widget_recent_entries ul li a:hover, .widget.widget_nav_menu ul li a:hover, body .widget_rss ul li .rsswidget:hover, body .widget_recent_entriesul li .post-date, body .widget_meta ul li .post_count, body .widget_archive ul li > a:before, .recent-posts-widget .meta-wrapper a, .widget.foodmood_widget.foodmood_banner-widget .banner-widget_text .tags_title:after, body .widget_product_categories ul li a:hover, .author-widget_social a:hover, .widget.widget_recent_comments ul li span.comment-author-link a:hover, body .widget .widget-title .widget-title_wrapper, body .widget_nav_menu .current-menu-ancestor > a, body .widget_nav_menu .current-menu-item > a, ul.wp-block-archives.wp-block-archives-list li a:hover, ul.wp-block-categories.wp-block-categories-list li a:hover, ul.wp-block-categories.wp-block-categories-list li a:hover + .post_count, ul.wp-block-latest-posts li a:hover, .wgl-container ul.wp-block-latest-posts li:hover:before, header.searсh-header .page-title span, .wgl_module_team .team-icon a:hover, .single-team .single_team_page .team-info_item.team-department span, .wgl-carousel .slick-arrow:hover, .wgl-video_popup .videobox_link:hover .videobox_icon, .page-header_breadcrumbs .breadcrumbs .current, .wgl-counter .wgl-counter_value-wrap, blockquote cite {
+        color: #f7b035;
+    }
+
+header .header-link:hover, .hover_links a:hover {
+    color: #f7b035 !important;
+}
+
+.recent-posts-widget .meta-wrapper a, .isotope-filter a .number_filter {
+    color: #f7b035;
+}
+
+.wgl_module_team .team-info_icons-flag svg, .single-team .single_team_page .team-info_icons-flag svg, .wgl-portfolio-single_item .wgl-portfolio-item_annotation .portfolio_annotation-bg svg, .inside_image .wgl-portfolio-item_description .portfolio_description-bg svg, .blog-post .blog-post_meta_info .date_post .date_post-flag svg, .post_featured_bg .date_post .date_post-flag svg, body .widget .widget-title .widget-title_pimp svg, .widget.foodmood_widget.foodmood_banner-widget .banner-widget_text_sub svg, .primary-nav > ul > li > a .menu-item_flag svg, .submenu_pimp svg {
+    fill: #f7b035;
+}
+
+.single_team_page .team-title:before, .share_post-container > a, .blog-style-hero .btn-read-more .blog-post-read-more, .foodmood_module_double_headings .heading_title .heading_divider, .foodmood_module_double_headings .heading_title .heading_divider:before, .foodmood_module_double_headings .heading_title .heading_divider:after, .wpml-ls-legacy-dropdown .wpml-ls-sub-menu .wpml-ls-item a span:before, .wgl-container ul.foodmood_plus li:after, .wgl-container ul.foodmood_plus li:before, .wgl-container ul.foodmood_dash li:before, #multiscroll-nav span, #multiscroll-nav li .active span, ul.wp-block-categories.wp-block-categories-list li a:hover:after, .wgl-pagination .page .current:after, .page-link .post-page-numbers:after, .page-link .post-page-numbers.current:after, .wgl-pagination .page-numbers:hover:after, .prev-link_wrapper a:hover .image_prev.no_image:before, .next-link_wrapper a:hover .image_next.no_image:before, .button-read-more:hover:after, .button-read-more:hover:before, .dropcap-bg {
+    background: #f7b035;
+}
+
+input[type="submit"], button, ::selection, #comments > h3:after, button:hover, mark, span.highlighter, .meta-wrapper span + span:before, .vc_wp_custommenu .menu .menu-item a:before, .primary-nav ul li.mega-menu.mega-cat div.mega-menu-container ul.mega-menu.cats-horizontal > li.is-active > a, .primary-nav .lavalamp-object, .primary-nav ul li ul li > a > span:before, .sitepress_container > .wpml-ls ul ul li a:hover, .blog-post_cats span a, .button__wrapper:hover:after, .calendar_wrap caption, .comment-reply-title:after, .foodmood_divider .foodmood_divider_line .foodmood_divider_custom .divider_line, .foodmood_module_cats .cats_item-count, .foodmood_module_progress_bar .progress_bar, .foodmood_module_infobox.type_tile:hover:before, .foodmood_module_social.with_bg .soc_icon, .foodmood_module_title:after, .foodmood_module_title .carousel_arrows a:hover span, .foodmood_module_videobox .videobox_link, .foodmood_module_ico_progress .progress_completed, .foodmood_module_services_3 .services_icon_wrapper .services_circle_wrapper .services_circle, .foodmood_module_time_line_horizontal .tlh_check_wrap, .load_more_works, .mc_form_inside #mc_signup_submit, .wgl-social-share_pages.hovered_style .share_social-icon-plus, .wgl-ellipsis span, .inside_image .wgl-portfolio-item_divider div, .wgl_module_title.item_title .carousel_arrows a:hover, .wgl_timetabs .timetabs_headings .wgl_tab.active:after, .wgl-container ul.foodmood_plus li:before, .wgl-container ul li:before, .wgl-social-share_pages.standard_style a:before, .blog-style-hero .blog-post-hero_wrapper .divider_post_info, .tagcloud a:hover, body .widget_meta ul li a:hover:after, .widget.widget_categories ul li a:hover:before, body .widget_archive ul li a:hover:after, body .widget_product_categories ul li a:hover:before, .wgl-pricing_plan .pricing_header:after, .wgl-portfolio-single_wrapper .wgl-portfolio-item_meta > span:after, .wgl-portfolio-single_wrapper .wgl-portfolio-item_cats a:before, .next-link_wrapper .image_next:before, .prev-link_wrapper .image_prev:before {
+    background-color: #f7b035;
+}
+
+.page_404_wrapper .foodmood_404_button.wgl_button .wgl_button_link, aside > .widget + .widget:before, .widget .calendar_wrap table td#today:before, .widget .calendar_wrap tbody td > a:before, .widget .counter_posts, .widget.widget_pages ul li a:before, .widget.widget_nav_menu ul li a:before, .widget_nav_menu .menu .menu-item:before, .widget_postshero .recent-posts-widget .post_cat a, .widget_meta ul li > a:before, .widget.foodmood_widget.foodmood_banner-widget .banner-widget_button:hover, .widget_archive ul li > a:before {
+    background-color: #f7b035;
+}
+
+.blog-post_meta-date, .wgl-carousel.navigation_offset_element .slick-prev:hover, .wgl-carousel.navigation_offset_element .slick-next:hover, .foodmood_module_demo_item .di_button a, .foodmood_module_button.wgl_button:not(.btn-gradient) .wgl_button_link, .next-link:hover, .prev-link:hover, .wpcf7 .call_to_action_1 .wgl_col-2 .wpcf7-submit:hover, .coming-soon_form .wpcf7 .wpcf7-submit, form.post-password-form input[type='submit'], .wgl-demo-item .wgl-button:hover, .button-read-more {
+    border-color: #f7b035;
+    background: #f7b035;
+}
+
+.foodmood_module_title .carousel_arrows a:hover span:before, .page_404_wrapper .foodmood_404_button.wgl_button .wgl_button_link, .load_more_works, .author-info_social-link:after, .author-widget_social a span, .single_info-share_social-wpapper .share_link .share-icon_animation, .single-team .single_team_page .team-image, .wgl_module_team .team-image, .inside_image.offset_animation:before, .foodmood_module_videobox .videobox_link, .foodmood_module_products_special_cats .product_special_cats-image_wrap:before, .wpcf7 .call_to_action_1 .wgl_col-2 .wpcf7-submit, .tagcloud a:hover, .wgl-pricing_plan .pricing_plan_wrap, .wgl-button.frb-button, .load_more_item, .load_more_wrapper .load_more_item {
+    border-color: #f7b035;
+}
+
+.wgl-portfolio-item_wrapper .overlay {
+    background-color: rgba(247,176,53,0.8);
+}
+
+.wgl-theme-header .header_search .header_search-field:after {
+    border-bottom-color: rgba(247,176,53,0.9);
+}
+
+.theme_color_shadow {
+    box-shadow: 0px 9px 30px 0px rgba(247,176,53,0.4);
+}
+
+.inside_image .overlay:before, .inside_image.always_info_animation:hover .overlay:before {
+    box-shadow: inset 0px 0px 0px 0px rgba(247,176,53,1);
+}
+
+.inside_image:hover .overlay:before, .inside_image.always_info_animation .overlay:before {
+    box-shadow: inset 0px 0px 0px 10px rgba(247,176,53,1);
+}
+
+.wgl-header-row.wgl-header-row-section_top .primary-nav > ul > li > a .menu-item_flag svg, .wgl-header-row.wgl-header-row-section_top .submenu_pimp svg {
+    fill: rgba(247,176,53,1);
+}
+
+.wgl-header-row.wgl-header-row-section_middle .primary-nav > ul > li > a .menu-item_flag svg, .wgl-header-row.wgl-header-row-section_middle .submenu_pimp svg {
+    fill: rgba(247,176,53,1);
+}
+
+.wgl-header-row.wgl-header-row-section_bottom .primary-nav > ul > li > a .menu-item_flag svg, .wgl-header-row.wgl-header-row-section_bottom .submenu_pimp svg {
+    fill: rgba(247,176,53,1);
+}
+
+.wgl-header-row.wgl-header-row-section_top .primary-nav .lavalamp-object, .wgl-header-row.wgl-header-row-section_top .mini-cart a.woo_icon, .wgl-header-row.wgl-header-row-section_top .header_search-button-wrapper {
+    background: rgba(247,176,53,1);
+}
+
+.wgl-header-row.wgl-header-row-section_middle .primary-nav .lavalamp-object, .wgl-header-row.wgl-header-row-section_middle .header_search-button-wrapper, .wgl-header-row.wgl-header-row-section_middle .mini-cart a.woo_icon {
+    background: rgba(247,176,53,1);
+}
+
+.wgl-header-row.wgl-header-row-section_bottom .primary-nav .lavalamp-object, .wgl-header-row.wgl-header-row-section_bottom .header_search-button-wrapper, .wgl-header-row.wgl-header-row-section_bottom .mini-cart a.woo_icon {
+    background: rgba(247,176,53,1);
+}
+
+.wgl-header-row.wgl-header-row-section_top .primary-nav ul li ul li.current-menu-ancestor.current-menu-parent > a, .wgl-header-row.wgl-header-row-section_top .primary-nav ul li ul li.current-menu-item > a, .wgl-header-row.wgl-header-row-section_top .primary-nav ul li ul li.current_page_item > a, .wgl-header-row.wgl-header-row-section_top .primary-nav ul li ul li:hover > a, .wgl-header-row.wgl-header-row-section_top .wgl-button.frb-button {
+    color: rgba(247,176,53,1);
+}
+
+.wgl-header-row.wgl-header-row-section_middle .primary-nav ul li ul li.current-menu-ancestor.current-menu-parent > a, .wgl-header-row.wgl-header-row-section_middle .primary-nav ul li ul li.current-menu-item > a, .wgl-header-row.wgl-header-row-section_middle .primary-nav ul li ul li.current_page_item > a, .wgl-header-row.wgl-header-row-section_middle .primary-nav ul li ul li:hover > a, .wgl-header-row.wgl-header-row-section_middle .wgl-button.frb-button {
+    color: rgba(247,176,53,1);
+}
+
+.wgl-header-row.wgl-header-row-section_bottom .primary-nav ul li ul li.current-menu-ancestor.current-menu-parent > a, .wgl-header-row.wgl-header-row-section_bottom .primary-nav ul li ul li.current-menu-item > a, .wgl-header-row.wgl-header-row-section_bottom .primary-nav ul li ul li.current_page_item > a, .wgl-header-row.wgl-header-row-section_bottom .primary-nav ul li ul li:hover > a, .wgl-header-row.wgl-header-row-section_bottom .wgl-button.frb-button {
+    color: rgba(247,176,53,1);
+}
+
+.wgl-theme-header .wgl-sticky-header .primary-nav > ul > li > a .menu-item_flag svg, .wgl-theme-header .wgl-sticky-header .submenu_pimp svg {
+    fill: #f7b035;
+}
+
+.wgl-theme-header .wgl-sticky-header .primary-nav .lavalamp-object, .wgl-theme-header .wgl-sticky-header .header_search-button-wrapper, .wgl-theme-header .wgl-sticky-header .mini-cart a.woo_icon {
+    background: #f7b035;
+}
+
+.wgl-theme-header .wgl-sticky-header .primary-nav ul li ul li.current-menu-ancestor.current-menu-parent > a, .wgl-theme-header .wgl-sticky-header .primary-nav ul li ul li.current-menu-item > a, .wgl-theme-header .wgl-sticky-header .primary-nav ul li ul li.current_page_item > a, .wgl-theme-header .wgl-sticky-header .primary-nav ul li ul li:hover > a, .wgl-theme-header .wgl-sticky-header .wgl-button.frb-button {
+    color: #f7b035;
+}
+
+footer {
+    background-color: #fff;
+}
+
+    footer .bg {
+        background-image: url("../uploads/2019/09/footer-bg-top.png"),
+        url("../uploads/2019/09/footer-bg.jpg");
+        background-repeat:repeat-x,repeat;
+    }
+
+.footer .mc4wp-form-fields input[type="submit"]:hover, .footer .mc4wp-form-fields input[type="submit"]:focus, .footer .mc4wp-form-fields input[type="submit"]:active, .footer_top-area .widget.widget_archive ul li > a:hover, .footer_top-area .widget.widget_archive ul li > a:hover, .footer_top-area .widget.widget_categories ul li > a:hover, .footer_top-area .widget.widget_categories ul li > a:hover, .footer_top-area .widget.widget_pages ul li > a:hover, .footer_top-area .widget.widget_pages ul li > a:hover, .footer_top-area .widget.widget_meta ul li > a:hover, .footer_top-area .widget.widget_meta ul li > a:hover, .footer_top-area .widget.widget_recent_comments ul li > a:hover, .footer_top-area .widget.widget_recent_comments ul li > a:hover, .footer_top-area .widget.widget_recent_entries ul li > a:hover, .footer_top-area .widget.widget_recent_entries ul li > a:hover, .footer_top-area .widget.widget_nav_menu ul li > a:hover, .footer_top-area .widget.widget_nav_menu ul li > a:hover, .footer_top-area .widget.widget_wgl_posts .recent-posts-widget li > .recent-posts-content .post_title a:hover, .footer_top-area .widget.widget_wgl_posts .recent-posts-widget li > .recent-posts-content .post_title a:hover {
+    color: #f7b035;
+}
+
+.footer ul li:before, .footer ul li:before, .footer_top-area a:hover, .footer_top-area a:hover {
+    color: #f7b035;
+}
+
+.footer_top-area .widget-title, .footer_top-area .widget_rss ul li .rsswidget, .footer_top-area .widget.widget_pages ul li a, .footer_top-area .widget.widget_nav_menu ul li a, .footer_top-area .widget.widget_wgl_posts .recent-posts-widget li > .recent-posts-content .post_title a, .footer_top-area .widget.widget_archive ul li > a, .footer_top-area .widget.widget_categories ul li > a, .footer_top-area .widget.widget_pages ul li > a, .footer_top-area .widget.widget_meta ul li > a, .footer_top-area .widget.widget_recent_comments ul li > a, .footer_top-area .widget.widget_recent_entries ul li > a, .footer_top-area .widget.widget_archive ul li:before, .footer_top-area .widget.widget_meta ul li:before, .footer_top-area .widget.widget_categories ul li:before, .footer_top-area strong, .footer_top-area h1, .footer_top-area h2, .footer_top-area h3, .footer_top-area h4, .footer_top-area h5, .footer_top-area h6 {
+    color: #232323;
+}
+
+.footer_top-area {
+    color: #616161;
+}
+
+    .footer_top-area .widget.widget_archive ul li:after, .footer_top-area .widget.widget_pages ul li:after, .footer_top-area .widget.widget_meta ul li:after, .footer_top-area .widget.widget_recent_comments ul li:after, .footer_top-area .widget.widget_recent_entries ul li:after, .footer_top-area .widget.widget_nav_menu ul li:after, .footer_top-area .widget.widget_categories ul li:after {
+        background-color: #616161;
+    }
+
+.footer .copyright {
+    color: #cccccc;
+}
+
+.footer .mc4wp-form-fields input[type="submit"] {
+    background-color: #f7b035;
+    border-color: #f7b035;
+}
+
+body .footer .tagcloud a:hover {
+    background-color: #f7b035;
+}
+
+.farsica ul#shipping_method li label, ul.wgl-products .price, div.wgl-products .price, .farsica div.product p.price, .farsica table.shop_table td.product-name .product-quantity, .farsica .products ul.wgl-products .price, .farsica .products div.wgl-products .price, .farsica .summary .product_meta > span span, .farsica .widget_price_filter .price_slider_amount .price_label span {
+    font-family: Open Sans;
+}
+
+.farsica ul#shipping_method li label, .farsica .summary .product_meta > span span, .farsica .summary .product_meta > span a, .farsica-error, .farsica-info, .farsica-message {
+    color: #616161;
+}
+
+    .wgl-theme-header .woo_mini_cart .farsica-mini-cart__total strong, .farsica div.product form.cart .group_table tr td label, .farsica nav.farsica-pagination ul li, .farsica #respond input#submit, .farsica span.onsale, .farsica .product_meta > span, #add_payment_method .wc-proceed-to-checkout a.checkout-button, .farsica-cart .wc-proceed-to-checkout a.checkout-button, .farsica-checkout .wc-proceed-to-checkout a.checkout-button, .farsica-message a.button, .farsica table.shop_table th, .farsica table.shop_table td, .farsica ul.cart_list li a, .farsica a.button, .farsica ul.product_list_widget li a, .farsica div.product .farsica-tabs ul.tabs li a, .farsica .cart-collaterals .cart_totals table th, .farsica div.product .farsica-tabs .panel table.shop_attributes th, .farsica .widget_price_filter .price_slider_amount .price_label {
+        font-family: "dana", Rubik;
+    }
+
+.single-product div.product .farsica-product-gallery .farsica-product-gallery__trigger:hover, .farsica #order_review.farsica-checkout-review-order table.shop_table thead th, .farsica div.product .farsica-tabs ul.tabs li.active a, .farsica .widget_price_filter .ui-slider .ui-slider-range, .farsica .widget_price_filter .ui-slider .ui-slider-handle, .farsica table.shop_table thead th {
+    background: #232323;
+}
+
+.wgl-theme-header .woo_mini_cart .farsica-mini-cart__buttons a.checkout, .farsica div.product form.cart .group_table tr td label a, .farsica div.product .farsica-tabs ul.tabs li:not(.active) a:hover, #add_payment_method .cart-collaterals .cart_totals .farsica-shipping-destination, .farsica-cart .cart-collaterals .cart_totals .farsica-shipping-destination, .farsica-checkout .cart-collaterals .cart_totals .farsica-shipping-destination, .farsica .widget_shopping_cart .buttons a.checkout, .farsica.widget_shopping_cart .buttons a.checkout, .farsica label, .farsica strong, .farsica .widget_price_filter .price_slider_amount .price_label, .farsica .widget_shopping_cart .total strong, .farsica.widget_shopping_cart .total strong, .farsica div.product .farsica-tabs .panel #respond #commentform label, .farsica .widget_price_filter .price_slider_amount, .farsica div.product .farsica-tabs .panel table.shop_attributes th, .farsica .cart-collaterals .cart_totals table th, .farsica-page .cart-collaterals .cart_totals table th, .farsica div.product form.cart div.quantity .quantity-wrapper .qty::placeholder, .farsica .summary .product_meta > span, .farsica div.product .farsica-tabs ul.tabs li.active, .farsica ul.cart_list li a, .farsica table.shop_table td.product-name, .farsica ul.product_list_widget li a, .farsica-tabs .comment-reply-title, .farsica form .form-row label, .farsica table.shop_table tfoot tr th, .farsica ul#shipping_method li label, #add_payment_method .wc-proceed-to-checkout .button__wrapper .checkout-button, .farsica-cart .wc-proceed-to-checkout .button__wrapper .checkout-button, .farsica-checkout .wc-proceed-to-checkout .button__wrapper .checkout-button, .group_table .farsica-grouped-product-list-item__price {
+    color: #232323;
+}
+
+.farsica table.shop_table div.quantity .qty, .farsica table.shop_table div.quantity .qty::placeholder, .farsica div.product form.cart div.quantity .qty, .farsica div.product form.cart div.quantity .qty::placeholder {
+    color: #232323;
+}
+
+.wgl-theme-header .woo_mini-count span, ul.wgl-products li a.add_to_cart_button, ul.wgl-products li a.button, ul.wgl-products li .added_to_cart.wc-forward, div.wgl-products div.product a.add_to_cart_button, div.wgl-products div.product a.button, div.wgl-products div.product .added_to_cart.wc-forward {
+    color: #232323;
+}
+
+.wgl-theme-header .woo_mini_cart .farsica-mini-cart__buttons a:hover, .farsica .widget_shopping_cart .buttons a:not(.checkout):hover, .farsica.widget_shopping_cart .buttons a:not(.checkout):hover, .farsica table.shop_table .farsica-Price-amount.amount, .farsica .foodmood_module_message_box .message_text, .farsica div.product form.cart .reset_variations:before, .farsica nav.farsica-pagination ul li a:focus, .farsica nav.farsica-pagination ul li a:hover, .farsica nav.farsica-pagination ul li span.current, .farsica form .form-row .required, .farsica table.shop_table td.product-name a:hover, .farsica-review-link:hover, .farsica .cart .button:hover, .farsica .cart input.button:hover, .product_meta > span a:hover, .farsica .quantity-wrapper span:hover, .farsica div.product form.cart .reset_variations:before, .farsica form .form-row .required, .farsica table.shop_table td.product-name a:hover, .farsica table.shop_table.cart input.button:hover, .farsica p.stars a, .farsica .summary .product_meta > span a:hover, .farsica .widget_shopping_cart .buttons a:hover, .farsica .widget_shopping_cart .total, .farsica.widget_shopping_cart .buttons a:hover, .farsica.widget_shopping_cart .total, .farsica .farsica-checkout .type_error .message_icon_wrap .message_icon, .farsica-cart .wc-proceed-to-checkout a.checkout-button:hover, .farsica-review-link:hover, .farsica div.product form.cart div.quantity .quantity-wrapper span:hover:before, .farsica div.product form.cart div.quantity .quantity-wrapper span:hover:after {
+    color: #232323;
+}
+
+.farsica #respond input#submit.disabled, .farsica #respond input#submit:disabled, .farsica #respond input#submit:disabled[disabled], .farsica a.button.disabled, .farsica a.button:disabled, .farsica a.button:disabled[disabled], .farsica button.button.disabled, .farsica button.button:disabled, .farsica button.button:disabled[disabled], .farsica input.button.disabled, .farsica input.button:disabled, .farsica input.button:disabled[disabled] {
+    color: #232323 !important;
+}
+
+.farsica div.product div.images .farsica-product-gallery__trigger:before, .farsica div.product form.cart .button {
+    border-color: #232323;
+}
+
+ul.wgl-products li .products-post_wrapper a.add_to_cart_button:not(.yith-wcqv-button), ul.wgl-products li .products-post_wrapper a.button:not(.yith-wcqv-button), ul.wgl-products li .products-post_wrapper .added_to_cart.wc-forward, .farsica .products ul.wgl-products li .products-post_wrapper a.add_to_cart_button:not(.yith-wcqv-button), .farsica .products ul.wgl-products li .products-post_wrapper a.button:not(.yith-wcqv-button), .farsica .products ul.wgl-products li .products-post_wrapper .added_to_cart.wc-forward, div.wgl-products div.product .products-post_wrapper a.add_to_cart_button:not(.yith-wcqv-button), div.wgl-products div.product .products-post_wrapper a.button:not(.yith-wcqv-button), div.wgl-products div.product .products-post_wrapper .added_to_cart.wc-forward, .farsica .products div.wgl-products div.product .products-post_wrapper a.add_to_cart_button:not(.yith-wcqv-button), .farsica .products div.wgl-products div.product .products-post_wrapper a.button:not(.yith-wcqv-button), .farsica .products div.wgl-products div.product .products-post_wrapper .added_to_cart.wc-forward {
+    font-family: Delius Unicase;
+}
+
+.wgl-theme-header .woo_mini-count span, .farsica div.product form.cart .group_table tr .farsica-grouped-product-list-item__price, .farsica div.product .summary p.price, div.product .summary span.price, .farsica div.product .summary .farsica-variation-price .price, ul.wgl-products .price, div.wgl-products .price, .farsica div.product form.cart div.quantity label.label-qty, .product_list_widget .farsica-Price-amount, .farsica ul.cart_list li .quantity, .farsica .products ul.wgl-products .price, .farsica .products div.wgl-products .price, .farsica table.shop_table .farsica-Price-amount.amount, .wgl-theme-header .woo_mini_cart .farsica-mini-cart__total .farsica-Price-amount, .farsica .widget_shopping_cart .total .farsica-Price-amount, .farsica.widget_shopping_cart .total .farsica-Price-amount, .farsica table.shop_table td.product-name .product-quantity, #add_payment_method .wc-proceed-to-checkout a.checkout-button, .farsica .cart-collaterals .cart_totals table tbody tr td, .farsica-page .cart-collaterals .cart_totals table tbody tr td, .farsica div.product span.price, .checkout.farsica-checkout #ship-to-different-address, .checkout.farsica-checkout #ship-to-different-address span {
+    font-family: Delius Unicase;
+}
+
+.farsica div.product span.price, .farsica .star-rating span:before, .farsica #review_form #respond p.stars a, .farsica table.shop_table.cart input.button:hover, ul.wgl-products .farsica-loop-product__title a:hover, div.wgl-products .farsica-loop-product__title a:hover, .farsica ul.cart_list li a:hover, .farsica .widget_price_filter .price_slider_amount .button:hover, .farsica p.stars a, .farsica ul.product_list_widget li a:hover .product-title, .farsica .summary .product_meta > span a:hover {
+    color: #f7b035;
+}
+
+.farsica nav.farsica-pagination ul li span:after, .farsica nav.farsica-pagination ul li a:after, .farsica nav.farsica-pagination ul li:hover a:after, .farsica nav.farsica-pagination ul li:hover span:after, .farsica nav.farsica-pagination ul li a:focus:after, .farsica nav.farsica-pagination ul li a:active:after, .farsica nav.farsica-pagination ul li a:hover:after, .farsica div.product .farsica-tabs ul.tabs li a:after, ul.wgl-products li button.button.loading:before, ul.wgl-products li input.button.loading, div.wgl-products div.product button.button.loading:before, div.wgl-products div.product input.button.loading {
+    background-color: #f7b035;
+}
+
+.farsica .widget_price_filter .price_slider_amount .button, .wgl-theme-header .woo_mini_cart .farsica-mini-cart__buttons a, .farsica table.shop_table.cart input.button, .farsica div.product form.cart .button, .farsica .widget_shopping_cart .buttons a {
+    background-color: #f7b035;
+    border-color: #f7b035;
+}
+
+ul.wgl-products .products-post_wrapper a.button.loading:before, ul.wgl-products .products-post_wrapper button.button.loading:before, ul.wgl-products .products-post_wrapper input.button.loading:before, .farsica .products ul.wgl-products .products-post_wrapper a.button.loading:before, .farsica .products ul.wgl-products .products-post_wrapper button.button.loading:before, .farsica .products ul.wgl-products .products-post_wrapper input.button.loading:before, div.wgl-products .products-post_wrapper a.button.loading:before, div.wgl-products .products-post_wrapper button.button.loading:before, div.wgl-products .products-post_wrapper input.button.loading:before, .farsica .products div.wgl-products .products-post_wrapper a.button.loading:before, .farsica .products div.wgl-products .products-post_wrapper button.button.loading:before, .farsica .products div.wgl-products .products-post_wrapper input.button.loading:before {
+    border-top-color: #f7b035 !important;
+}
+
+.farsica form .form-row .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #232323 transparent transparent transparent;
+}
+
+.wgl-theme-header .woo_mini_cart .farsica-mini-cart__total .farsica-Price-amount, .wgl-theme-header .mini-cart .farsica-mini-cart.cart_list.product_list_widget li span.quantity .farsica-Price-amount.amount, .farsica .quantity-wrapper span, .farsica ul.product_list_widget li ins, .farsica button.button:hover, .farsica-message a.button:hover, .farsica button.button[name="update_cart"]:hover, .farsica-cart .wc-proceed-to-checkout a.checkout-button:hover, .farsica #respond input#submit:hover, .farsica .cart .button:hover, .farsica .cart button.button:hover, .farsica .cart input.button:hover, .farsica #payment #place_order:hover, .farsica-page #payment #place_order:hover, .farsica a.button:hover, .farsica div.product p.price, .farsica div.product form.cart div.quantity .quantity-wrapper span, .farsica table.shop_table tfoot tr.order-total td .farsica-Price-amount.amount, .farsica table.shop_table tfoot tr.cart-subtotal td .farsica-Price-amount.amount, .farsica .widget_shopping_cart .total .farsica-Price-amount, .farsica.widget_shopping_cart .total .farsica-Price-amount, ul.wgl-products .price, div.wgl-products .price, .product_list_widget .farsica-Price-amount, .farsica .farsica-cart-form table.shop_table td.product-name a:hover, .farsica #review_form #respond p a {
+    color: #f7b035;
+}
+
+.wgl-theme-header .woo_mini_cart .farsica-mini-cart__buttons a.checkout:hover, .farsica .widget_shopping_cart .buttons a.checkout:hover, .farsica.widget_shopping_cart .buttons a.checkout:hover, .farsica span.onsale {
+    background-color: #f7b035;
+}
+
+.farsica #respond input#submit.disabled:hover, .farsica #respond input#submit:disabled:hover, .farsica #respond input#submit:disabled[disabled]:hover, .farsica a.button.disabled:hover, .farsica a.button:disabled:hover, .farsica a.button:disabled[disabled]:hover, .farsica button.button:disabled:hover, .farsica button.button:disabled[disabled]:hover, .farsica button.button.disabled:hover, .farsica input.button:hover, .farsica input.button:disabled:hover, .farsica input.button:disabled[disabled]:hover, .farsica input.button.disabled:hover, .farsica button.button[name="update_cart"], .farsica .widget_price_filter .price_slider_wrapper .ui-widget-content, .farsica #respond input#submit {
+    background: #f7b035;
+}
+
+    #add_payment_method .wc-proceed-to-checkout a.checkout-button, .farsica #respond input#submit, .farsica #respond input#submit.alt, .farsica #payment #place_order, .farsica a.button.alt, .farsica a.button, .farsica button.button, .farsica button.button.alt:hover, .farsica input.button, .farsica input.button.alt, .farsica .cart input.button, .farsica .cart .button, .farsica-page #payment #place_order {
+        border-color: #f7b035;
+        background: #f7b035;
+    }
+
+        ul.wgl-products li:hover .products-post:after, div.wgl-products div.product:hover .products-post:after, .farsica .products ul.wgl-products li:hover .products-post:after, .farsica .products div.wgl-products div.product:hover .products-post:after, .farsica .quantity.number-input .quantity-wrapper span:after, .farsica .quantity.number-input .quantity-wrapper span:before, .farsica-product-gallery .flex-control-thumbs img.flex-active, .farsica-product-gallery .flex-control-thumbs img:hover, .farsica #respond input#submit:disabled, .farsica #respond input#submit:disabled[disabled], .farsica #respond input#submit.disabled, .farsica a.button:disabled, .farsica a.button:disabled[disabled], .farsica a.button.disabled, .farsica button.button.alt, .farsica button.button:disabled, .farsica button.button:disabled[disabled], .farsica button.button.disabled, .farsica input.button:disabled, .farsica input.button:disabled[disabled], .farsica input.button.disabled, .farsica table.shop_table thead {
+            border-color: #f7b035;
+        }
+
+ul.wgl-products .products-post_wrapper a.add_to_cart_button:not(.yith-wcqv-button):before, ul.wgl-products .products-post_wrapper a.button:not(.yith-wcqv-button):before, ul.wgl-products .products-post_wrapper .added_to_cart.wc-forward:before, .farsica .products ul.wgl-products .products-post_wrapper a.add_to_cart_button:not(.yith-wcqv-button):before, .farsica .products ul.wgl-products .products-post_wrapper a.button:not(.yith-wcqv-button):before, .farsica .products ul.wgl-products .products-post_wrapper .added_to_cart.wc-forward:before, div.wgl-products .products-post_wrapper a.add_to_cart_button:not(.yith-wcqv-button):before, div.wgl-products .products-post_wrapper a.button:not(.yith-wcqv-button):before, div.wgl-products .products-post_wrapper .added_to_cart.wc-forward:before, .farsica .products div.wgl-products .products-post_wrapper a.add_to_cart_button:not(.yith-wcqv-button):before, .farsica .products div.wgl-products .products-post_wrapper a.button:not(.yith-wcqv-button):before, .farsica .products div.wgl-products .products-post_wrapper .added_to_cart.wc-forward:before {
+    border-color: #f7b035 transparent transparent transparent;
+}
+
+ul.wgl-products .products-post_wrapper .group_button-woo svg, .farsica .products ul.wgl-products .products-post_wrapper .group_button-woo svg, div.wgl-products .products-post_wrapper .group_button-woo svg, .farsica .products div.wgl-products .products-post_wrapper .group_button-woo svg {
+    fill: #f7b035;
+}
+
+.farsica .woo_banner_text svg {
+    fill: #232323;
+}
+
+body {
+    background: #ffffff;
+}
+
+ol.commentlist:after {
+    background: #ffffff;
+}
+
+h1, h1 a, h1 span {
+    font-family: "dana", Rubik;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 56px;
+}
+
+h2, h2 a, h2 span {
+    font-family: "dana", Rubik;
+}
+
+h3, h3 a, h3 span {
+    font-family: "dana", Rubik;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+h4, h4 a, h4 span {
+    font-family: "dana", Rubik;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+h5, h5 a, h5 span {
+    font-family: "dana", Rubik;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+h6, h6 a, h6 span {
+    font-family: "dana", Rubik;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .wgl-theme-header {
+        background-color: rgba(35,35,35,1) !important;
+        color: #ffffff !important;
+    }
+
+    .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
+        background-color: #ffffff;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .wgl-theme-header .wgl-mobile-header {
+        display: block;
+    }
+
+    .wgl-site-header {
+        display: none;
+    }
+
+    .wgl-theme-header .mobile-hamburger-toggle {
+        display: inline-block;
+    }
+
+    .wgl-theme-header .primary-nav {
+        display: none;
+    }
+
+    header.wgl-theme-header .mobile_nav_wrapper .primary-nav {
+        display: block;
+    }
+
+    .wgl-theme-header .wgl-sticky-header {
+        display: none;
+    }
+
+    .wgl-social-share_pages {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    body .wgl-theme-header.header_overlap {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .page-header {
+        padding-top: 15px !important;
+        padding-bottom: 40px !important;
+        height: 230px !important;
+    }
+
+    .page-header_content .page-header_title {
+        color: #232323 !important;
+        font-size: 42px !important;
+        line-height: 60px !important;
+    }
+
+    .page-header_content .page-header_breadcrumbs {
+        color: #232323 !important;
+        font-size: 16px !important;
+        line-height: 24px !important;
+    }
+}
+
+.theme-gradient input[type="submit"], .rev_slider .rev-btn.gradient-button, body .widget .widget-title .widget-title_wrapper:before, .foodmood_module_progress_bar .progress_bar {
+    background-color: #f7b035;
+}
+
+body.frb-page main .wgl-container.wgl-content-sidebar, body.frb-editor-active main .wgl-container.wgl-content-sidebar, body.frb-editor-preview main .wgl-container.wgl-content-sidebar {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body.single main .wgl-container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recentcomments a {
+    display: inline !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.wgl-footer {
+    padding-top: 30px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+#side-panel .side-panel_sidebar {
+    padding-top: 105px;
+    padding-right: 90px;
+    padding-bottom: 105px;
+    padding-left: 90px;
+}
+
+#foodmood_button1 {
+    border-color: rgba(247,176,53,1);
+    background-color: rgba(255,255,255,1);
+    color: rgba(35,35,35,1);
+}
+
+    #foodmood_button1:hover {
+        border-color: rgba(247,176,53,1);
+        background-color: rgba(247,176,53,1);
+        color: rgba(255,255,255,1);
+    }
+
+#foodmood_button2 {
+    border-color: rgba(247,176,53,1);
+    background-color: rgba(255,255,255,1);
+    color: rgba(35,35,35,1);
+}
+
+    #foodmood_button2:hover {
+        border-color: rgba(247,176,53,1);
+        background-color: rgba(247,176,53,1);
+        color: rgba(255,255,255,1);
+    }
+
+.home #foodmood_button1 {
+    border-color: rgba(255,255,255,1);
+    background-color: rgba(255,255,255,1);
+    color: rgba(206,134,43,1);
+}
+
+    .home #foodmood_button1:hover {
+        border-color: rgba(206,134,43,1);
+        background-color: rgba(206,134,43,1);
+        color: rgba(255,255,255,1);
+    }
+
+.home #foodmood_button2 {
+    border-color: rgba(247,176,53,1);
+    background-color: rgba(247,176,53,1);
+    color: rgba(255,255,255,1);
+}
+
+    .home #foodmood_button2:hover {
+        border-color: rgba(247,176,53,1);
+        background-color: rgba(255,255,255,1);
+        color: rgba(247,176,53,1);
+    }
+
+.gallery {
+    margin: auto;
+}
+
+.gallery dl {
+    float: right;
+    margin-top: 10px;
+    text-align: center;
+    width: 33%;
+}
+
+.gallery img {
+    border: 2px solid #cfcfcf;
+}
